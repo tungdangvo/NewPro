@@ -1,0 +1,31 @@
+.div-max{
+width:1000px;
+}
+
+.align1
+{
+text-align:right;
+}
+.search-text-field {
+    border-radius: 7px;
+    height: 30px;
+    border: medium none;
+    padding: 0px 25px 0px 10px;
+    width: calc(100% - 600px);
+    text-shadow: none;
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 40px rgba(140, 213, 210, 0.3) inset;
+    transition: all 1s ease 0s;
+}
+.search-button {
+    width: 30px;
+    height: 30px;
+    background: url("../images/btsearch.png") no-repeat scroll center center / 60% 60% transparent;
+
+    display: inline-block;
+    border: medium none;
+    border-radius: 100%;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}

@@ -1,0 +1,717 @@
+
+/*animation*/
+#likebt:hover{
+	background:lavender;
+	box-shadow:1px 1px 10px;
+}
+@keyframes img_animation{
+	0%{
+		opacity:0.6;
+		-moz-box-shadow: 0px 0px 20px #FF0000;
+		-webkit-box-shadow: 0px 0px 20px #FF0000;
+		box-shadow: 0px 0px 20px #FF0000;
+		}
+	25%{
+		opacity:0.7;
+		-moz-box-shadow: 0px 0px 20px #00FF00;
+		-webkit-box-shadow: 0px 0px 20px #00FF00;
+		box-shadow: 0px 0px 20px #00FF00;
+		}
+	50%{
+		opacity:0.8;
+		-moz-box-shadow: 0px 0px 20px #0000FF;
+		-webkit-box-shadow: 0px 0px 20px #0000FF;
+		box-shadow: 0px 0px 20px #0000FF;
+		}
+	75%{
+		opacity:0.9;
+		-moz-box-shadow: 0px 0px 20px #FFFF00;
+		-webkit-box-shadow: 0px 0px 20px #FFFF00;
+		box-shadow: 0px 0px 20px #FFFF00;
+		}
+	100%{
+		opacity:1;
+		-moz-box-shadow: 0px 0px 20px #00FFFF;
+		-webkit-box-shadow: 0px 0px 20px #00FFFF;
+		box-shadow: 0px 0px 20px #00FFFF;
+		}
+}
+@-webkit-keyframes img_animation{
+	0%{
+		opacity:0.6;
+		-moz-box-shadow: 0px 0px 20px #FF0000;
+		-webkit-box-shadow: 0px 0px 20px #FF0000;
+		box-shadow: 0px 0px 20px #FF0000;
+		}
+	25%{
+		opacity:0.7;
+		-moz-box-shadow: 0px 0px 20px #00FF00;
+		-webkit-box-shadow: 0px 0px 20px #00FF00;
+		box-shadow: 0px 0px 20px #00FF00;
+		}
+	50%{
+		opacity:0.8;
+		-moz-box-shadow: 0px 0px 20px #0000FF;
+		-webkit-box-shadow: 0px 0px 20px #0000FF;
+		box-shadow: 0px 0px 20px #0000FF;
+		}
+	75%{
+		opacity:0.9;
+		-moz-box-shadow: 0px 0px 20px #FFFF00;
+		-webkit-box-shadow: 0px 0px 20px #FFFF00;
+		box-shadow: 0px 0px 20px #FFFF00;
+		}
+	100%{
+		opacity:1;
+		-moz-box-shadow: 0px 0px 20px #00FFFF;
+		-webkit-box-shadow: 0px 0px 20px #00FFFF;
+		box-shadow: 0px 0px 20px #00FFFF;
+		}
+}
+
+/*animation*/
+/*-----------------------------*/
+/*the a*/
+
+a:hover{
+	-webkit-animation:a_animation 1s linear 0s infinite alternate;
+	animation:a_animation 1s linear 0s infinite alternate;
+}
+a:visited{
+
+}
+a:active{
+
+}
+/*end the a*/
+
+
+/*wrapper*/
+#wrapper{
+	width:960px;
+	height:auto;
+	margin:100px auto;
+	text-align:left;
+	background:white; 
+	padding:0px 20px !important;
+	margin-top:100px
+	float:left;
+	/*-moz-box-shadow:0px 0px 3px #CCCCCC;
+	-webkit-box-shadow:0px 0px 3px #CCCCCC;
+	-o-box-shadow:0px 0px 3px #CCCCCC;
+	-moz-box-shadow:0px 0px 3px #CCCCCC;
+	box-shadow:0px 0px 3px #CCCCCC;*/
+}
+
+#wrapper section{/*width:630p;*/
+	float:left;
+	margin:30px 30px 0px 0px;
+	width:630px;
+	/*border-bottom:3px solid #999999;*/
+}
+/*end wrapper*/
+/*-----------------------------*/
+/*header*/
+.logo {/*total width:200px*/
+	display:inline;
+	width:200px;
+	height:100px;
+	vertical-align:middle;
+	float:left;
+}
+.search {/*total width:610px*/
+	display:inline;
+	width:610px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+}
+.btn_search {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+	background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.btn_search:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+	background-color:#dfdfdf;
+}
+.btn_search:active {
+	position:relative;
+	top:1px;
+}
+.txt_search { 
+    border: 1px solid #c4c4c4; 
+    height: 25px; 
+    width: 275px; 
+    font-size: 13px; 
+    padding: 4px 4px 4px 4px; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+} 
+ 
+.txt_search:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+} 
+.login_logout{/*total width:150px;*/
+	display:inline;
+	width:150px;
+	text-align:right;
+	float:right;
+	line-height:100px;
+}
+/*end header*/
+/*-----------------------------*/
+/*section*/
+
+/*end section*/
+/*-----------------------------*/
+/*Bai Hat Moi*/
+.BaiHatMoi{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 10px 0px;
+	border-bottom:3px solid #999999;
+	clear:both;
+}
+.BaiHatMoi #title{
+	padding-bottom:40px;
+}
+.BaiHatMoi #title span{
+	float:left;
+	font-size:22px;
+	color:#777777;
+}
+.BaiHatMoi #title a{
+	float:right;
+	padding-right:5px;
+}
+.BaiHatMoi #row{
+	line-height:30px;
+	clear:both;
+	border-bottom:1px solid #CCCCCC;
+}
+.BaiHatMoi #tenbaihat{/*width: 630-120-150*/
+	width:360px; 
+	height:30px;
+	float:left;
+}
+.BaiHatMoi #tenbaihat{
+	font-size:16px;
+}
+.BaiHatMoi #tenbaihat a:last-child{
+	color:#333333;
+}
+.BaiHatMoi #luotnghe{/*width:120px;*/
+	width:120px; 
+	float:left;	
+	font-size:12px;
+	color:#777777;
+}
+.BaiHatMoi #luotnghe img{
+	margin-right:5px;
+	height:20px;
+	width:18px;
+	display:inline;
+	vertical-align:middle;
+}
+.BaiHatMoi #chucnang{/*width:150px;*/
+	width:150px; 
+	float:right;
+}
+.BaiHatMoi #chucnang a img{
+	width:30px;
+	height:20px;
+	display:inline;
+	vertical-align:middle;
+	/*-webkit-transiton:opacity 1ms linear;*/
+}
+.BaiHatMoi #chucnang a img:hover{
+	-webkit-animation:img_animation 2s linear 0s infinite alternate;
+	animation:img_animation 2s linear 0s infinite alternate;
+}
+/*end Bai Hat Moi*/
+/*---------------------------------*/
+/*Playlist | Album*/
+.PlaylistAlbum{
+	margin:10px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border-bottom:3px solid #999999;
+	clear:both;
+}
+.PlaylistAlbum #title{
+	padding:0px 0px 40px 0px;
+}
+.PlaylistAlbum #title span{
+	float:left;
+	font-size:22px;
+	color:#777777;
+}
+.PlaylistAlbum #title a{
+	float:right;
+	padding-right:5px;
+}
+.PlaylistAlbum #cell{
+	margin:0px 20px 20px 0px;
+	padding:0px 0px 0px 0px;
+	width:135.5px;
+	float:left;
+	border:1px solid #CCCCCC;
+	
+	-moz-box-shadow:0px 0px 10px #CCCCCC;
+	-webkit-box-shadow:0px 0px 10px #CCCCCC;
+	box-shadow:0px 0px 10px #CCCCCC;
+	/*background:rgb(0,0,0);
+	background: transparent\9;
+	background:rgba(0,0,0,0.3);*/
+}
+.PlaylistAlbum #cell:hover{
+	/*-webkit-animation:img_animation 3s linear 0s infinite alternate;
+	animation:img_animation 3s linear 0s infinite alternate;*/
+	opacity:0.5;
+}
+.PlaylistAlbum #cell #video img{
+	width:135.5px;
+	height:150px;
+}
+.PlaylistAlbum #cell #video img:hover{
+	
+}
+.PlaylistAlbum #cell #title{
+	margin:5px 0px 0px 0px;
+	padding:0px 0px 0px 2px;
+}
+.PlaylistAlbum #cell #title a{
+	font-size:16px;
+	float:left;
+}
+.PlaylistAlbum #cell #casi{
+	clear:both;
+	font-size:14px;
+	padding:0px 0px 0px 2px;
+}
+
+.PlaylistAlbum #cell #casi a{
+	color:#333333;
+}
+.PlaylistAlbum #cell #casi img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+.PlaylistAlbum #cell #luotnghe{
+	font-size:12px;
+	color:#777777;
+	padding:0px 0px 0px 2px;
+}
+.PlaylistAlbum #cell #luotnghe img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+/*end Playlist | Album*/
+/*---------------------------------*/
+/*Video | Movie*/
+.Video_Movie{
+	margin:10px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	/*border-bottom:3px solid #999999;*/
+	clear:both;
+}
+.Video_Movie #title{
+	padding:0px 0px 40px 0px;
+}
+.Video_Movie #title span{
+	float:left;
+	font-size:22px;
+	color:#777777;
+}
+.Video_Movie #title a{
+	float:right;
+	padding-right:5px;
+}
+.Video_Movie #left{
+	float:left;
+	width:270px;
+	margin-right:20px;
+}
+.Video_Movie #left #cell{
+	margin-bottom:20px;
+	
+	-moz-box-shadow:0px 0px 10px #CCCCCC;
+	-webkit-box-shadow:0px 0px 10px #CCCCCC;
+	box-shadow:0px 0px 10px #CCCCCC;
+}
+.Video_Movie #left #cell:hover{
+	opacity:0.5;
+}
+.Video_Movie #left #cell #video img{
+	width:270px;
+	height:156px;
+}
+.Video_Movie #left #cell #song_name{
+	margin:5px 0px 0px 0px;
+	padding:0px 0px 0px 5px;
+}
+.Video_Movie #left #cell #song_name a{
+	font-size:16px;
+}
+.Video_Movie #left #cell #singer_name{
+	font-size:14px;
+	color:#333333;
+}
+.Video_Movie #left #cell #singer_name a{
+	color:#333333;
+}
+.Video_Movie #left #cell #singer_name img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+.Video_Movie #left #cell #count{
+	font-size:12px;
+	color:#777777;
+	padding:0px 0px 0px 2px;
+}
+.Video_Movie #left #cell #count img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+/*..................*/
+.Video_Movie #right{
+	width:340px;
+	float:left;
+}
+.Video_Movie #right #cell{
+	float:left;
+	margin:0px 20px 20px 0px;
+	
+	-moz-box-shadow:0px 0px 10px #CCCCCC;
+	-webkit-box-shadow:0px 0px 10px #CCCCCC;
+	box-shadow:0px 0px 10px #CCCCCC;
+}
+.Video_Movie #right #cell:hover{
+	opacity:0.5;
+}
+.Video_Movie #right #cell #video img{
+	width:150px;
+	height:80px;
+}
+.Video_Movie #right #cell #song_name a{
+	font-size:16px;
+}
+.Video_Movie #right #singer_name a{
+	color:#333333;
+	font-size:14px;
+}
+.Video_Movie #right #cell #singer_name img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+.Video_Movie #right #cell #count{
+	font-size:12px;
+	color:#777777;
+	padding:0px 0px 0px 2px;
+}
+.Video_Movie #right #cell #count img{
+	width:20px;
+	height:18px;
+	margin:2px 5px 2px 0px;
+	display:inline;
+	vertical-align:middle;
+}
+/*end Video | Movie*/
+/*---------------------------------*/
+/*aside*/
+.aside{/*width:300px;*/
+	margin:30px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	width:300px;
+	float:left;
+}
+/*end aside*/
+/*---------------------------------*/
+/*advertise*/
+.advertise{
+	width:100%;
+}
+.advertise img{
+	width:300px;
+}
+/*end advertise*/
+/*---------------------------------*/
+/*BXH Bai Hat*/
+.BXHBaiHat{
+	margin:10px 0px 0px 0px;
+	padding:0;
+	clear:both;
+}
+.BXHBaiHat #title{
+	background-color:#78ba00;
+	height:45px;
+	line-height:45px;
+	padding-left:10px;
+	font-size:22px;
+	color:#FFFFFF;
+}
+/*select_option*/
+.select_option option,
+.select_option:after,
+.select_option::after,
+.select_option select
+{
+    color: #fff;
+}
+.select_option select,
+.select_option:after,
+.select_option::after{
+	display: block;
+    background: #78ba00;
+}
+.select_option select,
+.select_option option
+{
+    padding: 8px;
+}
+.select_option
+{
+    position: relative;
+    display: inline-block;
+    border: 0;
+	float:right;
+}
+.select_option::after
+{
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 32px;
+    font-size: 12px;
+    line-height: 45px;
+    text-align: center;
+     
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+}
+.select_option select
+{
+   height: 45px;
+   border: 0;
+   vertical-align: middle;
+   /*font: normal 12px/14px "Segoe UI", Arial, Helvetica, Sans-serif;*/
+   outline: 0 none;
+   padding-top:14px;
+}
+.select_option option
+{
+    background: #78ba00;
+    color: #fff;
+}
+.select_option select:hover{
+	color:#33FFFF;
+}
+/*end select_option*/
+.BXHBaiHat #cell{
+	margin:0px 0px 0px 0px;
+	padding:20px 0px;
+	clear:both;
+	width:100%;
+	clear:both;
+}
+.BXHBaiHat #cell #so{
+	float:left;
+	width:28px;
+	height:37px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:37px;
+	background:#FFFFFF;
+	border-radius:30px;
+	border:1px solid #CCCCCC;
+	margin-right:3px;
+	color:#000000;
+	font-weight:bold;
+	font-size:20px;
+	box-shadow:inset 0px 0px 10px #333333;
+	-moz-box-shadow:inset 0px 0px 10px #333333;
+	-webkit-box-shadow:inset 0px 0px 10px #333333;
+	
+}
+.BXHBaiHat #cell #tenbaihat{
+	float:left;
+	width:267px;
+	font-size:16px;
+}
+.BXHBaiHat #cell #tenbaihat > div img{
+	width:18px;
+	height:18px;
+	display:inline;
+	vertical-align:middle;
+	margin-right:2px;
+}
+.BXHBaiHat #cell #tenbaihat > div{
+	font-size:12px;
+	color:#777777;
+}
+.BXHBaiHat #cell #tenbaihat div{
+	float:right;
+	
+}
+.BXHBaiHat #cell #casi{
+	float:left;
+	width:227px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ 
+    .BXHBaiHat #cell #tenbaihat 
+{
+		line-height:20px;
+	
+	}
+}
+.BXHBaiHat #cell #casi a{
+	color:#000000;
+	font-size:14px;
+}
+.BXHBaiHat #cell #casi img{
+	width:18px;
+	height:18px;
+	display:inline;
+	vertical-align:middle;
+	margin-right:2px;
+}
+/*end BXH Bai Hat*/
+/*--------------------------*/
+/*--------------------------*/
+/*ca si | nghe si*/
+.CaSiNgheSi{
+	clear:both;
+	margin:20px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-size:15px;
+	font-weight:bold;
+	color:#777777;
+	
+}
+.CaSiNgheSi #title{
+	background-color:#ff1d77;
+	height:45px;
+	line-height:45px;
+	padding-left:5px;
+	font-size:22px;
+	color:#FFFFFF;
+}
+.CaSiNgheSi #cell{
+	width:70px;
+	height:70px;
+	float:left;
+	margin:5px 5px 15px 0px;
+}
+.CaSiNgheSi #cell img{
+	width:70px;
+	height:70px;
+}
+.CaSiNgheSi #cell a{
+	font-size:12px;
+}
+/*end ca si | nghe si*/
+/*--------------------------*/
+/*footer*/
+footer{
+	clear:both;
+	/*border-top:3px solid #999999;*/
+	-moz-box-shadow:inset 0px 0px 50px #CCCCCC;
+	-webkit-box-shadow:inset 0px 0px 50px #CCCCCC;
+	-o-box-shadow:inset 0px 0px 50px #CCCCCC;
+	box-shadow:inset 0px 0px 50px #CCCCCC;
+}
+footer{
+width:100%;
+float:left;
+}
+footer div{
+width:187px;
+float:left;
+font-size:16px;
+margin:0px 5px 0px 0px;
+}
+footer div:last-child{
+margin:0px;
+}
+footer a{
+font-size:16px;
+}
+footer span{
+font-size:16px;
+}
+footer div h3{
+margin:10px 0px 10px 0px;
+font-size:16px;
+}
+footer div ul{
+list-style:none;
+margin:0px;
+padding:0px;
+}
+footer div ul li{
+margin:2px 0px 2px 0px;
+}
+/*end footer*/
+/*--------------------------*/
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+- Anonymous User :
+	- Login:
+		- Register new user
+		- Register for password reminder
+		- provide username and password:
+			- Authenticate user
+			- Validate
+	- Register new user: 
+		- provide information :
+			- validate
+	- Search for something :
+		- filter search result
+	- View songs :
+		- filter songs
+		- play a song :
+			- like the song
+			- unlike the song
+			- leave comments
+			- edit comments
+			- add to a song playlist
+			- submit a lyric file
+	- View videos
+		- filter videos
+		- play a video
+			- like the video
+			- unlike the video
+			- leave comments
+			- edit comments
+			- add to a video playlist
+	- upload
+		- choose file type
+		- choose categories
+	
+- Logged in User :
+	- View profile 
+		- change password
+		- change profile information
+			- validate information
+	- View Playlists :
+		- Filter playlists
+		- create a new playlist
+		- edit a playlist
+			- edit playlist items
+				- remove items
+			- validate
+
+				
+		
+		
+	
+			
+		
