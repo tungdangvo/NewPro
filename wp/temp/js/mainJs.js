@@ -162,7 +162,7 @@ function main_menu_initial(){
 			
 		});
 	
-		max_width +=(max_width*30)/100 +20;
+		max_width +=((max_width*30)/100)+20;
 		
 		$(this).children('ul').children('li').width(max_width);
 		
@@ -177,7 +177,7 @@ function main_menu_initial(){
 				max_width*=3;
 				
 		}
-
+	
 		$(this).children('ul').width(max_width);
 		
 	});

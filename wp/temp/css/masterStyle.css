@@ -8,6 +8,7 @@ body{
 	padding:0;
 	border:0;
 	vertical-align:baseline;
+	font-family: Arial, Helvetica, sans-serif;
 	font-family: 'Vollkorn', serif;
 	font-size: 15px;
 	color: #9C8282;
@@ -20,6 +21,7 @@ body{
 
 ul{
 	list-style:none;
+	height: 100%;
 }
 
 a{
@@ -176,8 +178,7 @@ a{
 	/*  */
 }
 .h10-hover:hover{
-	text-shadow:1px 1px 20px rgb(141, 189, 196)
-}
+	text-shadow: 1px 1px 20px rgb(141, 189, 196);}
 .h11-hover{
 	font-size:0.7em;
 	
@@ -202,15 +203,18 @@ a{
 
 .circle-focus a{
 	transition:all 1s;
-	/* text-shadow: 1px 1px 2px gray,1px 1px 10px #ECEC3C; */
+	text-shadow: -1px -1px 1px black,1px 1px 1px white;
 	
+	color: #8F4949;
 }
 .circle-focus a:hover{
 	
 	text-shadow: 1px 1px 10px #8CABD3,1px 1px 1px #ccc;
 }
 
-
+.inset-box{
+	1px 1px 10px inset,-2px -2px 1px black, 2px 2px 1px white
+}
 .menu-scroll-button{
 	background:white url(../images/up.png) no-repeat;
 }
@@ -271,7 +275,7 @@ a{
 	transition: all 1s;
 	z-index: 1000;
 	box-shadow: 1px 1px 10px;
-	opacity: 0.8;
+	opacity: 1;
 }
 .top-box:hover{
 	opacity:1;
@@ -282,7 +286,8 @@ a{
 
 }
 .banner-title{
-	font-size:2.3em;
+	margin: -1px -1px 1px black,1px 1px 1px white;
+	font-size: 2.9em;
 	line-height: 40px;
 	margin:3% 5% 0px;
 }
@@ -334,10 +339,10 @@ a{
 }
 
 .menu-item{
-    float: left;
 	display:inline-block;
     margin-top: 10px;
-    margin-left: 5px;
+    
+	margin-left: 5px;
 }
 
 
@@ -377,7 +382,11 @@ a{
     overflow: hidden;
     margin:0px;
 	text-align:center;
-	height:0px;
+	
+
+    padding-left: 10px !important;
+
+    height:0px;
     transition:all 1s;
 	
     
@@ -388,11 +397,12 @@ a{
 .sub-menu li{
 	float:left;
 
+	display: inline-flex;
 }
 
 
 .sub-menu>li>a{
-	display:inline-block;
+	display: inline-flex;
 	line-height:30px;
 	padding:0px 10px 0px 10px;
 	transition:all 0.5s;
@@ -484,7 +494,7 @@ a{
 }
 .sitemap-item:first-of-type{
 	
-	background:url(../images/home.png) no-repeat;
+	background: url(../images/home.png) no-repeat;
 	padding:0px;
 	margin-top:-2px;
 	background-size:100% auto;
@@ -533,9 +543,9 @@ a{
 .slideshow-box{
     width: 800px;
     height: 360px;
-    margin: 90px auto;
+    margin: 90px auto 0px;
     box-shadow: 1px 1px 10px;
-    /* background: white; */
+    border-radius: 5px;
 }
 .my-slide{
     width: 98%;
@@ -685,16 +695,168 @@ a{
     background-repeat: no-repeat;  
     background-size: 90% !important;
 }
-.content-wrapper
-.content-item-box
-.content-item-box-wrapper
-.content-item-box-title
-.content-item-box-title-left
-.content-item-box-title-right
-.content-item-box-content
-.vertical-list-container
-.music-list-item
-.music-list-item-left
+.content-wrapper{
+    width: 1100px;
+    /* background: lavender; */
+    margin: auto;
+}
+.content-item-box{
+    width: 65%;      /* background: lavender; */      padding: 15px;      box-shadow: 1px 1px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.content-item-box-wrapper{}
+.content-item-box-title{
+    padding-bottom: 15px;
+    font-family: 'Vollkorn', serif;
+}
+.content-item-box-title-left{
+    text-shadow: -1px -1px 1px black,1px 1px 1px white;
+    font-size: 3em;
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+}
+.content-item-box-title-right{
+    display: inline-block;
+    float: right;
+    margin: 30px 20px 10px 20px;
+    text-align: right;
+    color: rgb(163, 147, 147);
+}
+.content-item-box-content{
+    /* width: 65%; */
+    /* background: lavender; */
+    padding: 15px;
+    box-shadow: 1px 1px 10px inset,-3px -3px 1px rgb(71, 70, 70), 1px 1px 1px #928383;
+    border-radius: 10px;
+}
+.vertical-list-container{
+    width: 100%;
+}
+.music-list-item{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid rgb(192, 190, 190);
+    border-radius: 7px;
+    line-height: 100%;
+	transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;
+    margin-top: 5px;
+}
+.music-list-item:hover{
+	background: rgba(169, 245, 242, 0.24);
+}
+.music-list-item-left{
+    display: inline-block;
+    width: 74%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.music-list-item-right{
+    display: inline-block;
+    /* float: right; */
+    height: 100%;
+    width: 25%;
+}
+.music-list-item-title{
+    color: rgb(160, 114, 114);
+}
+.music-list-item-left-spliter{}
+.music-list-item-singers{
+    font-weight: lighter;
+    color: #928997;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.music-list-item-views{
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 5px 0px 0px 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../images/headphones.png) no-repeat;
+    background-size: 13px;
+    background-position: 0px 5px;
+    font-weight: normal;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.music-list-item-toolbox{
+    display: inline-block;
+    float: right;
+}
+.music-list-item-toolbox-item{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: right;
+    margin-left: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.music-list-item-toolbox-playlist{
+    background-image: url(../images/playlist-add.png);
+}
+.music-list-item-toolbox-download{
+    background-image: url(../images/download.png);
+}
+.music-list-item-spliter{}
+.video-list{
+    width: 100%;
+    /* font-size: 15px; */
+}
+.video-list-item{
+    width: 20%;
+    /* float: left; */
+  
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid lavender;
+    float: left;
+	transition:background 0.5s;
+}
+.video-list-item:hover{
+  background: rgba(169, 245, 242, 0.24);
+}
+.video-list .video-list-item:first-of-type{
+    /* width: 45%; */
+    /* font-size: 1.5em; */
+    /* padding-bottom: 57px; */
+}
+.video-list-item-thumb{
+    width: 100%;
+}
+.video-list-item-title{
+    font-size: 0.8em;
+    color: rgb(160, 114, 114);
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+.video-list-item-author{
+    line-height: 10px;
+    font-weight: lighter;
+    /* padding: 0px 15px; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video-list-item-views{
+    line-height: 15px;
+    font-weight: lighter;
+    padding-left: 20px;
+    background: url(../images/view.png) no-repeat;
+    background-size: auto 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .
 .
 .
@@ -706,7 +868,5 @@ a{
 .
 .
 .
-.
-
 
 
