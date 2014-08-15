@@ -11,7 +11,7 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-family: 'Vollkorn', serif;
 	font-size: 15px;
-	color: #9C8282;
+	/* color: #9C8282; */
 	background: url(../images/test1.png);
 	font-weight: bold;
 }
@@ -26,7 +26,7 @@ ul{
 
 a{
 	text-decoration:none;
-	color: #000000;
+	color: #747C79;
 }
 .h1{
 	font-size: 1.8em;
@@ -218,7 +218,13 @@ a{
 .menu-scroll-button{
 	background:white url(../images/up.png) no-repeat;
 }
-
+.wrapper{
+	/* background:red; */
+	box-shadow: 1px 1px 10px rgb(154, 185, 219);
+	width: 1100px;
+	margin: auto;
+	padding: 20px 40px;
+}
 .single-button{
 	
 	background-size: 80% 80%;
@@ -274,7 +280,7 @@ a{
 	background: url(../images/test1.png);
 	transition: all 1s;
 	z-index: 1000;
-	box-shadow: 1px 1px 10px;
+	box-shadow: 1px 1px 10px rgb(154, 185, 219);
 	opacity: 1;
 }
 .top-box:hover{
@@ -365,6 +371,7 @@ a{
   	line-height: 30px;
 	transition:all 0.5s;
 	
+  	color: black;
 }
 .menu-item:hover{
 
@@ -544,7 +551,7 @@ a{
     width: 800px;
     height: 360px;
     margin: 90px auto 0px;
-    box-shadow: 1px 1px 10px;
+    box-shadow: 1px 1px 10px rgb(154, 185, 219);
     border-radius: 5px;
 }
 .my-slide{
@@ -696,27 +703,34 @@ a{
     background-size: 90% !important;
 }
 .content-wrapper{
-    width: 1100px;
-    /* background: lavender; */
+    width: 100%;
+    /* background: rgba(211, 211, 223, 0.19); */
     margin: auto;
     margin-top: 10px;
+    vertical-align: middle;
+    /* box-shadow: 1px 1px 10px rgb(154, 185, 219); */
 }
 .content-left {
     float:left;
-    width: calc(98% - 300px);
-    box-shadow: 1px 1px 10px;
-    border-radius: 5px;
+    width: calc(96% - 300px);
+    /* box-shadow: 1px 1px 10px; */
+    /* border-radius: 5px; */
+    /* border-right: 1px solid black; */
+    /* height: 98%; */
+    display: inline-block;
 }
 .content-right {
     float:right;
     width:300px;
-    background:lavender;
+    /* background:lavender; */
+    padding-left: 40px;
+    border-left: 1px solid lavender;
 }
 .content-item-box{
-    width: 95%;                  
-    border-bottom: 2px solid rgba(128, 128, 128, 0.45);
-    margin: 20px auto;
-    border-radius: 10px;
+    width: 100%;                  
+    border-bottom: 1px solid lavender;
+    padding-top: 20px;
+    /* border-radius: 10px; */
 }
 .content-item-box-wrapper{
     margin-top: 20px;
@@ -726,28 +740,29 @@ a{
 }
 
 .content-item-box-title{
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     font-family: 'Vollkorn', serif;
 }
 .content-item-box-title-left{
     text-shadow: -1px -1px 1px black,1px 1px 1px white;
-    font-size: 2.8em;
+    font-size: 2.3em;
     display: inline-block;
     float: left;
     padding-left: 20px;
+    color: rgb(129, 130, 145);
 }
 .content-item-box-title-right{
     display: inline-block;
     float: right;
     margin: 30px 20px 10px 20px;
     text-align: right;
-    color: rgb(163, 147, 147);
+    /* color: rgb(163, 147, 147); */
 }
 .content-item-box-content{
     /* width: 65%; */
     /* background: lavender; */
     padding: 15px;
-    box-shadow: 1px 1px 10px inset,-3px -3px 1px rgb(71, 70, 70), 1px 1px 1px #928383;
+    box-shadow: 1px 1px 10px rgb(164, 188, 199) inset,-2px -2px 1px rgb(93, 169, 184), 1px 1px 1px #9FC2D6;
     border-radius: 10px;
 }
 .vertical-list-container{
@@ -755,11 +770,14 @@ a{
 }
 .music-list-item{
     padding: 5px 10px 5px 10px;
-    border: 1px solid rgb(192, 190, 190);
-    border-radius: 7px;
-    line-height: 100%;
+    border-bottom: 1px solid rgba(0, 20, 255, 0.15);
+    /* border-radius: 7px; */
+    /* line-height: 100%; */
 	transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;
     margin-top: 5px;
+}
+.music-list-item:nth-child(2n+1){
+	border-color: lavender;
 }
 .music-list-item:hover{
 	background: rgba(169, 245, 242, 0.24);
@@ -778,7 +796,7 @@ a{
     width: 25%;
 }
 .music-list-item-title{
-    color: rgb(160, 114, 114);
+    color: rgb(100, 135, 158);
 }
 .music-list-item-left-spliter{}
 .music-list-item-singers{
@@ -788,9 +806,9 @@ a{
 }
 .music-list-item-views{
     height: 100%;
-    width: 50%;
+    width: 48%;
     float: left;
-    padding: 5px 0px 0px 15px;
+    padding: 5px 0px 0px 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -800,6 +818,7 @@ a{
     font-weight: normal;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(34, 66, 92);
 }
 .music-list-item-toolbox{
     display: inline-block;
@@ -901,7 +920,15 @@ a{
     background-size: auto 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.
+.main-footer{
+	height: 100px;
+	/* width: 100%; */
+	margin: 10px;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 1px 1px 10px rgb(154, 185, 219);
+	line-height: 100px;
+}
 .
 .
 .
