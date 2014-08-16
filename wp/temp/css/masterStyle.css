@@ -26,7 +26,7 @@ ul{
 
 a{
 	text-decoration:none;
-	color: #747C79;
+	color: rgb(17, 115, 119);
 }
 .h1{
 	font-size: 1.8em;
@@ -222,8 +222,9 @@ a{
 	/* background:red; */
 	box-shadow: 1px 1px 10px rgb(154, 185, 219);
 	width: 1100px;
-	margin: auto;
+	margin: 10px auto;
 	padding: 20px 40px;
+	position: relative;
 }
 .single-button{
 	
@@ -722,9 +723,7 @@ a{
 .content-right {
     float:right;
     width:300px;
-    /* background:lavender; */
     padding-left: 40px;
-    border-left: 1px solid lavender;
 }
 .content-item-box{
     width: 100%;                  
@@ -745,7 +744,7 @@ a{
 }
 .content-item-box-title-left{
     text-shadow: -1px -1px 1px black,1px 1px 1px white;
-    font-size: 2.3em;
+    font-size: 2.0em;
     display: inline-block;
     float: left;
     padding-left: 20px;
@@ -796,7 +795,7 @@ a{
     width: 25%;
 }
 .music-list-item-title{
-    color: rgb(100, 135, 158);
+    color: rgb(17, 115, 119);
 }
 .music-list-item-left-spliter{}
 .music-list-item-singers{
@@ -844,9 +843,10 @@ a{
 .video-list{
     width: 100%;
     /* font-size: 15px; */
+    padding: 0px !important;
 }
 .video-list-item{
-    width: 29.8%;
+    width: 21.6%;
     /* float: left; */
   
     padding: 5px 5px 10px 5px;
@@ -859,6 +859,8 @@ a{
 	transition:background 0.5s;
     position: relative;
     z-index: -0;
+    padding-bottom: 50px;
+    text-align: center;
 }
 .video-list-item:hover{
   background: rgba(169, 245, 242, 0.24);
@@ -876,15 +878,16 @@ a{
     bottom: 0px;
     background: rgba(255, 255, 255, 0.84);
     width: 100%;
+    margin-left: -5px;
 }
 .video-list-item-info-box {
     margin:auto;
-    width: 97%;
-    padding-bottom: 3px;
+    width: 100%;
+    padding: 3px;
     white-space: nowrap;  text-overflow: ellipsis;  overflow: hidden;
 }
 .video-list .video-list-item:first-of-type{
-    width: 63%;
+    /* width: 43%; */
     /* font-size: 1.5em; */
     /* padding-bottom: 57px; */
 }
@@ -894,7 +897,7 @@ a{
 }
 .video-list-item-title{
     font-size: 0.8em;
-    color: rgb(95, 23, 23);
+    color: rgb(17, 115, 119);
     /* white-space: nowrap; */
     /* text-overflow: ellipsis; */
     /* overflow: hidden; */
@@ -919,6 +922,8 @@ a{
     background: url(../images/view.png) no-repeat;
     background-size: auto 100%;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(34, 66, 92);
+    text-align: left;
 }
 .main-footer{
 	height: 100px;
@@ -929,13 +934,191 @@ a{
 	box-shadow: 1px 1px 10px rgb(154, 185, 219);
 	line-height: 100px;
 }
-.
-.
-.
-.
-.
-.
-.
+.playlist-list{}
+.playlist-list-item{
+    position: relative;
+    width: 22.4%;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid lavender;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.playlist-list-item:hover {
+	background: rgba(169, 245, 242, 0.24);
+}
+.playlist-list-item:hover .video-list-item-info-box {
+    margin:auto;
+    width: 100%;
+    white-space:normal;
+    text-overflow:initial;
+
+    overflow-wrap:break-word;
+}
+.playlist-list-item-thumb{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.playlist-list-item-thumb img{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+.playlist-singer{
+    /* display: inline-block; */
+}
+.playlist-singer a{}
+.playlist-list-item-title{
+    font-size: 0.8em;
+	
+    width: 100%;
+    display: inline;
+}
+.playlist-list-item-info-box-wrapper {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.84);
+    width: 100%;
+}
+.content-aside-box{
+	width:100%;
+	position:relative;
+	display:block;
+	padding-top: 20px;
+}
+.content-wrapper{
+	margin:auto;
+	display:block;
+}
+.horizontal-music-list{
+    border: 1px solid lavender;
+    border-radius: 5px;
+    padding: 5px;
+}
+.horizontal-music-list .item{
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(181, 232, 236, 0.33);
+    white-space: nowrap; 
+	text-overflow: ellipsis; 
+	overflow: hidden;
+    text-align: left;
+}
+.horizontal-music-list .item .title{
+    font-size: 0.8em;  color: rgb(17, 115, 119);  
+
+    display: inline;
+}
+.horizontal-music-list .item .ranking-number{
+    width: 50px;
+    background: rgba(211, 188, 188, 0.51);
+    margin-right: 5px;
+    height: 50px;
+    border-radius: 100%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(45, 99, 167, 0.75);
+}
+.horizontal-music-list .item:nth-child(2n+1) .ranking-number{
+
+    background: rgba(137, 160, 179, 0.28);
+
+}
+.horizontal-music-list .item:first-of-type .ranking-number{
+
+    background: rgba(255, 0, 0, 0.46);
+
+}
+.horizontal-music-list .item:nth-of-type(2) .ranking-number{
+
+    background: rgba(19, 189, 94, 0.51);
+
+}
+.horizontal-music-list .item:nth-of-type(3) .ranking-number{
+
+    background: rgba(182, 213, 20, 0.39);
+
+}
+
+.horizontal-music-list .item .singers{
+	text-overflow: ellipsis; 
+	overflow: hidden;
+    
+	
+	font-size: 0.9em;
+	line-height: 10px;
+}
+.horizontal-music-list .item .singers a{
+    font-weight: lighter;  color: #928997;  font-family: Arial, Helvetica, sans-serif;
+
+}
+.horizontal-music-list .item:hover{
+	/* border: 1px solid rgba(59, 205, 218, 0.33); */
+	background: rgba(169, 245, 242, 0.24);
+	/* overflow: visible; */
+	white-space: normal;
+	word-wrap: break-word;
+	height: auto;
+	border-radius:5px;
+    border-top-left-radius: 25px; 
+	
+    /* border-bottom-left-radius: 25px; */
+}
+.horizontal-music-list .item .views{
+
+	font-size: 0.7em;  
+	float: left;  
+	padding-left: 15px;        
+	background: url(../images/headphones.png) no-repeat; 
+	background-size: 11px;  
+	background-position: 0px 1px;  
+	font-weight: normal;    
+	font-family: Arial, Helvetica, sans-serif;  
+	color: rgb(34, 66, 92);
+	margin: auto;
+	float: right;
+	margin-right: 20px;
+
+}
+.vertical-spliter{
+    border-left: 1px solid lavender;
+    float: left;
+    height: calc(100% - 40px);
+    position: absolute;
+    right: 380px;
+}
+
+.aside-video-list-item{
+    width: 42.6%;
+    padding: 5px 5px 10px 5px;
+    margin: 5px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid lavender;
+    float: left;
+	transition:background 0.5s;
+    position: relative;
+    z-index: -0;
+    padding-bottom: 50px;
+    text-align: left;
+}
+.aside-video-list-item .video-list-item-info-box {
+	width:97%;
+
+}
+.aside-video-list-item:hover .video-list-item-info-box {
+    margin:auto;
+    white-space:normal;
+    text-overflow:initial;
+    overflow-wrap:break-word;
+}
+
 .
 .
 .
