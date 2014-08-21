@@ -11,10 +11,7 @@ $('document').ready(function(){
 	
 
 	
-	$('.media-player').videoPlayer({
-		'playerWidth' : 0.95,
-		'videoClass' : 'video'	
-	});
+	$('.media-player').videoPlayer();
 	
 	$(".post-comment").click(function(e){
 		e.preventDefault();
@@ -300,25 +297,37 @@ function main_menu_initial(){
 		});
 	
 	}
-	$.fn.videoPlayer = function(options) {
+	$.fn.videoPlayer = function() {
 		
-				
-		var settings = {  
-			playerWidth : '0.95', // Default is 95%
-			videoClass : 'video'  // Video Class
-		}
-		
-		// Extend the options so they work with the plugin
-		if(options) {
-			$.extend(settings, options);
-		}
-		
-		
-		// For each so that we keep chainability.
 		return this.each(function() {	
+		
+			var media = $(this).find("video")[0];
 			
-			$(this)[0].addEventListener('loadedmetadata', function() {
+			//alert($(media).attr("src"));
+			/*$(media).on("loadstart",function(){
+				alert("loadstart");
+			});
+			$(media).on("durationchange",function(){
+				alert("durationchange");
+			});
+			$(media).on("loadedmetadata",function(){
+				alert("loadedmetadata");
+			});
+			$(media).on("loadeddata",function(){
+				alert("loadeddata");
+			});
+			$(media).on("progress",function(){
+				alert("progress");
+			});
+			$(media).on("canplay",function(){
+				alert("canplay");
+			});
+			$(media).on("canplaythrough",function(){
+				alert("canplaythrough");
+			});*/
 			
+			$(media).on('durationchange', function() {
+				//	alert("loadstart");
 				// Basic Variables 
 				var $this = $(this);
 				var $settings = settings;
